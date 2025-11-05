@@ -25,15 +25,15 @@ const Navber = () => {
                             </div>
                             <ul
                                 tabIndex="-1"
-                                className="  dropdown-content bg-black/40 backdrop-blur-md rounded-box p-2 shadow">
+                                className="  dropdown-content bg-black/40 backdrop-blur-md rounded-box p-2 shadow text-2xl">
 
                                 {links}
                             </ul>
                         </div>
                         <div className='flex items-center gap-10'>
-                            <a className="text-xl font-bold ">DRAMATIC</a>
+                            <a className="text-2xl font-bold font-grif text-[#fdc700]">DRAMATIC</a>
                             <div className="navbar-center hidden lg:flex">
-                                <ul  className="  px-1 flex gap-10">
+                                <ul  className="  px-1 flex gap-10 text-xl">
                                     {links}
                                 </ul>
                             </div>

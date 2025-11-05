@@ -18,12 +18,21 @@ const AllMoviesBtn = () => {
                 const uniqueCategory = ["All", ...new Set(data.map((movie) => movie.category))];
                 setCategorys(uniqueCategory);
             })
-            .catch(successful => toast.successful('Data Loeading Successful'));
+            .catch(() => toast.success('Data Loading Successful'))
+            .finally(() => setLoading(false));
     }, []);
 
     const filteredMovies = selectedCategory === "All" ? movies : movies.filter(movie => movie.category === selectedCategory);
 
     const visibleMovies = showAll ? filteredMovies : filteredMovies.slice(0, 8);
+
+    if(loading) {
+        return (
+            <div className="text-center text-lg ">
+                Loading Movies
+            </div>
+        )
+    }
 
     return (
         <div className='py-10 px-20 container mx-auto '>

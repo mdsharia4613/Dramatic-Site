@@ -99,7 +99,7 @@ const Home = () => {
 
     return (
         <div>
-            <Toaster></Toaster>
+            <Toaster position='top-right'></Toaster>
             <Banner />
             <AllMoviesBtn></AllMoviesBtn>
             <TopRatingMovies></TopRatingMovies>

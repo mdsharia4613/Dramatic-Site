@@ -35,7 +35,7 @@ const TopRatingMovies = () => {
     return (
         <>
             
-            <div className="py-5 px-10 md:py-10 md:px-20 container mx-auto relative">
+            <div className="py-5 px-10 md:py-10 md:px-20 container mx-auto relative mb-8">
                 <h2 className="text-2xl text-center md:text-left font-semibold mb-6">⭐ Top Rated Movies</h2>
                 {/* custom navigation */}
                 <button ref={prevref} className='custom-prv cursor-pointer left-8 md:left-10 absolute bg-black/40 translate-y-52 rounded-full p-2 flex justify-center items-center'><MdOutlineKeyboardArrowLeft fontSize={28}/>

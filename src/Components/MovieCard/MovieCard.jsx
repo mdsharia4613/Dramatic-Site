@@ -1,13 +1,18 @@
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { FaHeartCircleCheck } from "react-icons/fa6";
-import { FaRegStar } from "react-icons/fa";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+
+
 
 
 const MovieCard = ({ movie }) => {
     const { card_picture, title,  platform, rating } = movie;
+    const stars = rating /2;
+    const fullStars = Math.floor(stars);
+    const halStar = stars % 1 >= 0.5;
 
     return (
-        <div className="w-[250px] h-[380px] md:w-[300px] md:h-[420px] border  border-yellow-300 rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-5 cursor-pointer mt-8">
+        <div className="w-[250px] h-[370px] md:w-[300px] md:h-[400px]    rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-5 cursor-pointer mt-8 ">
             {/* Movie Image */}
             <div className="flex justify-center mb-3">
                 <img
@@ -30,15 +35,19 @@ const MovieCard = ({ movie }) => {
             <div className="flex justify-between items-center text-sm ">
                 <p className="font-bold text-[16px] px-1.5 py-0.5 bg-[#fdc700] text-black rounded-lg">{platform}</p>
                 <div className="flex items-center gap-1">
-                    {Array.from({ length: 1 }, (_, i) => (
-                        <FaRegStar
-                            key={i}
-                            className={`text-${i < Math.round(rating) ? "yellow-400" : "gray-300"}`}
-                        />
-                    ))}
+                    {Array.from({length: 5}, (_, i) => {
+                        if(i < fullStars){
+                            return <FaStar key={i} className="text-yellow-400"></FaStar>
+                        }
+                        else if(i === fullStars && halStar){
+                            return <FaStarHalfAlt key={i} className="text-yellow-400"></FaStarHalfAlt>
+                        }
+                        else{
+                            return <FaRegStar key={i} className="text-yellow-400" ></FaRegStar>
+                        }
+                    })}
                     <span className="font-semibold ml-1">{rating}</span>
                 </div>
-
             </div>
 
             

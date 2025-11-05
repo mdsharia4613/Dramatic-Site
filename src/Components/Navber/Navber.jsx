@@ -5,12 +5,9 @@ const Navber = () => {
 
     const links = (
         <>
-            <li className="dropdown dropdown-hover transition-all ">
+            <li>
                 <NavLink to='/' className={navLinkstyle}>Home</NavLink>
-                <ul className="dropdown-content menu bg-base-100 rounded-box w-52 p-2 shadow-sm text-black">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
-                </ul>
+                
             </li>
             <li><NavLink to='show' className={navLinkstyle}>TV Show</NavLink></li>
             <li><NavLink to='movies' className={navLinkstyle}>Movies</NavLink></li>

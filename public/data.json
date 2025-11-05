@@ -1,0 +1,132 @@
+[
+    {
+        "id": "1",
+        "brand": "TorqueMaster",
+        "country": "USA",
+        "productName": "High-Torque Impact Wrench 1/2\"",
+        "rating": 4.7,
+        "reviewCount": 842,
+        "price": 129.99,
+        "description": "Durable 1/2\" impact wrench with high torque for heavy-duty lug nuts and engine work.",
+        "img": "https://i.ibb.co.com/8np8mg5k/10013.jpg",
+        "stock": "In Stock",
+        "material": "Steel",
+        "colors": [
+            "Black",
+            "Red"
+        ],
+        "category": "All",
+        "inStock": true
+    },
+    {
+        "id": "2",
+        "brand": "AxlePro",
+        "country": "Germany",
+        "productName": "Front Wheel Bearing Kit (Compact)",
+        "rating": 4.5,
+        "reviewCount": 421,
+        "price": 49.5,
+        "description": "Precision wheel bearing kit for smooth turning and extended lifespan.",
+        "img": "https://i.ibb.co.com/rKFgxrKB/10014.jpg",
+        "stock": "In Stock",
+        "material": "Alloy Steel",
+        "colors": [
+            "Silver",
+            "Gray"
+        ],
+        "category": "All",
+        "inStock": true
+    },
+    {
+        "id": "3",
+        "brand": "BrakeWave",
+        "country": "Japan",
+        "productName": "Ceramic Brake Pads (Set)",
+        "rating": 4.6,
+        "reviewCount": 1345,
+        "price": 79.99,
+        "description": "Low-dust ceramic brake pads with excellent braking performance and low noise.",
+        "img": "https://i.ibb.co.com/DDQxcn6v/10011.jpg",
+        "stock": "In Stock",
+        "material": "Ceramic",
+        "colors": [
+            "Black"
+        ],
+        "category": "All",
+        "inStock": false
+    },
+    {
+        "id": "4",
+        "brand": "FuelFlow",
+        "country": "USA",
+        "productName": "Fuel Injector Cleaner Kit",
+        "rating": 4.2,
+        "reviewCount": 276,
+        "price": 24.99,
+        "description": "Complete kit for cleaning fuel injectors and restoring fuel efficiency.",
+        "img": "https://i.ibb.co.com/0pXPp71m/10012.jpg",
+        "stock": "In Stock",
+        "material": "Plastic/Metal",
+        "colors": [
+            "Blue",
+            "White"
+        ],
+        "category": "All",
+        "inStock": false
+    },
+    {
+        "id": "5",
+        "brand": "SparkRight",
+        "country": "France",
+        "productName": "Platinum Spark Plug (Single)",
+        "rating": 4.4,
+        "reviewCount": 512,
+        "price": 9.75,
+        "description": "High-performance platinum spark plug for better ignition and fuel economy.",
+        "img": "https://i.ibb.co.com/1YK7zzZS/10015.jpg",
+        "stock": "In Stock",
+        "material": "Platinum",
+        "colors": [
+            "Silver"
+        ],
+        "category": "All",
+        "inStock": true
+    },
+    {
+        "id": "6",
+        "brand": "RadiantCool",
+        "country": "South Korea",
+        "productName": "Aluminum Radiator 2-row",
+        "rating": 4.3,
+        "reviewCount": 193,
+        "price": 159.0,
+        "description": "Lightweight 2-row aluminum radiator—improved cooling and corrosion resistance.",
+        "img": "https://i.ibb.co.com/0ySnDqD9/10016.jpg",
+        "stock": "Out of Stock",
+        "material": "Aluminum",
+        "colors": [
+            "Silver"
+        ],
+        "category": "All",
+        "inStock": true
+    },
+    {
+        "id": "7",
+        "brand": "FilterMax",
+        "country": "UK",
+        "productName": "High-Efficiency Oil Filter",
+        "rating": 4.8,
+        "reviewCount": 980,
+        "price": 14.5,
+        "description": "Superior filtration for longer engine life and consistent oil pressure.",
+        "img": "https://i.ibb.co.com/d0vTmWQ2/10017.jpg",
+        "stock": "In Stock",
+        "material": "Steel/Filter Media",
+        "colors": [
+            "Black",
+            "White"
+        ],
+        "category": "All",
+        "inStock": false
+    }
+] 

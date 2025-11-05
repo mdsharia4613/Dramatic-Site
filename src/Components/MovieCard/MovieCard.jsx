@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
     const { card_picture, title,  platform, rating } = movie;
 
     return (
-        <div className="w-[300px] h-[420px] border  border-yellow-300 rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-4 cursor-pointer mt-8">
+        <div className="w-[250px] h-[380px] md:w-[300px] md:h-[420px] border  border-yellow-300 rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-5 cursor-pointer mt-8">
             {/* Movie Image */}
             <div className="flex justify-center mb-3">
                 <img
@@ -21,14 +21,14 @@ const MovieCard = ({ movie }) => {
             <div className="flex justify-between items-center mb-2">
                 <h2 className="font-semibold text-lg ">{title}</h2>
                 <div className="flex gap-2 text-xl ">
-                    <MdOutlineRemoveRedEye className="hover:text-[#fdc700] transition" />
-                    <FaHeartCircleCheck className="hover:text-red-500 transition" />
+                    <MdOutlineRemoveRedEye className= " text-gray-600 hover:text-[#fdc700] transition" />
+                    <FaHeartCircleCheck className="text-red-500 transition" />
                 </div>
             </div>
 
             {/* Platform, Rating, and Date */}
             <div className="flex justify-between items-center text-sm ">
-                <p className="font-bold text-[16px] px-1.5 py-0.5 bg-[#fdc700] text-black">{platform}</p>
+                <p className="font-bold text-[16px] px-1.5 py-0.5 bg-[#fdc700] text-black rounded-lg">{platform}</p>
                 <div className="flex items-center gap-1">
                     {Array.from({ length: 1 }, (_, i) => (
                         <FaRegStar

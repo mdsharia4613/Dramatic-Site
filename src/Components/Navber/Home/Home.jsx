@@ -98,7 +98,7 @@ const Home = () => {
     
 
     return (
-        <div>
+        <div className='overflow-hidden'>
             <Toaster position='top-right'></Toaster>
             <Banner />
             <AllMoviesBtn></AllMoviesBtn>

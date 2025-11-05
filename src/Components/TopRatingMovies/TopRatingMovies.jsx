@@ -35,12 +35,12 @@ const TopRatingMovies = () => {
     return (
         <>
             
-            <div className="py-10 px-20 container mx-auto relative ">
-                <h2 className="text-2xl font-semibold mb-6">⭐ Top Rated Movies</h2>
+            <div className="py-5 px-10 md:py-10 md:px-20 container mx-auto relative">
+                <h2 className="text-2xl text-center md:text-left font-semibold mb-6">⭐ Top Rated Movies</h2>
                 {/* custom navigation */}
-                <button ref={prevref} className='custom-prv cursor-pointer left-10 absolute bg-black/40 translate-y-52 rounded-full p-2 flex justify-center items-center'><MdOutlineKeyboardArrowLeft fontSize={28}/>
+                <button ref={prevref} className='custom-prv cursor-pointer left-8 md:left-10 absolute bg-black/40 translate-y-52 rounded-full p-2 flex justify-center items-center'><MdOutlineKeyboardArrowLeft fontSize={28}/>
 </button>
-                <button ref={nextref} className='custom-next cursor-pointer right-16 absolute bg-black/40 translate-y-52 rounded-full p-2 flex justify-center items-center'><MdKeyboardArrowRight fontSize={28}/>
+                <button ref={nextref} className='custom-next cursor-pointer right-11 md:right-16 absolute bg-black/40 translate-y-52 rounded-full p-2 flex justify-center items-center'><MdKeyboardArrowRight fontSize={28}/>
 </button>
                 <Swiper
                     breakpoints={{
@@ -51,7 +51,7 @@ const TopRatingMovies = () => {
                     spaceBetween={25} 
                     loop={true}
                     autoplay={{
-                        delay: 3000,
+                        delay: 2000,
                         disableOnInteraction: true,
                     }}
                     pagination={{ clickable: true }}

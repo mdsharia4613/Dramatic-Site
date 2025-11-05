@@ -5,8 +5,8 @@ const Footer = () => {
         <div>
             <footer className="footer sm:footer-horizontal bg-[#181818] p-10">
                 <nav>
-                    <h6 className="footer-title">DRAMATIC</h6>
-                    <p>Enjoy your Movie time</p>
+                    <h6 className="footer-title font-grif font-bold text-2xl text-[#fdc700]">DRAMATIC</h6>
+                    <p className='text-[16px]'>Enjoy your Movie time</p>
                 </nav>
                 <nav>
                     <h6 className="footer-title">NAVIGATION</h6>
@@ -16,20 +16,20 @@ const Footer = () => {
                     <a className="link link-hover">NEW</a>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">Legal</h6>
+                    <h6 className="footer-title text-gray-400">Legal</h6>
                     <a className="link link-hover">Privacy Policy</a>
                     <a className="link link-hover">Terms of Service</a>
                     <a className="link link-hover">Cookie Preferemces</a>
                     <a className="link link-hover">Corporate Information</a>
                 </nav>
                 <nav>
-                    <h6 className="footer-title">TALK TO US</h6>
+                    <h6 className="footer-title text-gray-400">TALK TO US</h6>
                     <a className="link link-hover">support@ercom.com</a>
                     <a className="link link-hover">+66 2399 1145</a>
 
                 </nav>
                 <nav>
-                    <h6 className="footer-title">Folling US</h6>
+                    <h6 className="footer-title text-gray-400">Folling US</h6>
                     <div className='flex items-center gap-4'>
                         <p><FaFacebook fontSize={20} /></p>
                         <p><FaTwitter  fontSize={20}/></p>

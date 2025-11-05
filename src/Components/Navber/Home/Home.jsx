@@ -6,6 +6,7 @@ import Test2 from '../../Test2/Test2';
 import Products from '../../Products/Products';
 import AllMoviesBtn from '../../AllMoviesBtn/AllMoviesBtn';
 import TopRatingMovies from '../../TopRatingMovies/TopRatingMovies';
+import { Toaster } from 'react-hot-toast';
 
 const Home = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -98,6 +99,7 @@ const Home = () => {
 
     return (
         <div>
+            <Toaster></Toaster>
             <Banner />
             <AllMoviesBtn></AllMoviesBtn>
             <TopRatingMovies></TopRatingMovies>

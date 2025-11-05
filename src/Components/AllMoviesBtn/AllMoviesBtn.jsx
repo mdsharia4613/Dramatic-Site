@@ -1,11 +1,13 @@
 import  { useEffect, useState } from 'react';
 import MovieCard from '../MovieCard/MovieCard';
+import toast from 'react-hot-toast/headless';
 
 const AllMoviesBtn = () => {
     const [movies, setMovies] = useState([]);
     const [categorys, setCategorys] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("All");
     const [showAll , setShowAll] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetch('/Movies.json')
@@ -15,8 +17,9 @@ const AllMoviesBtn = () => {
 
                 const uniqueCategory = ["All", ...new Set(data.map((movie) => movie.category))];
                 setCategorys(uniqueCategory);
-            });
-    }, []); 
+            })
+            .catch(successful => toast.successful('Data Loeading Successful'));
+    }, []);
 
     const filteredMovies = selectedCategory === "All" ? movies : movies.filter(movie => movie.category === selectedCategory);
 

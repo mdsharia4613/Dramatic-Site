@@ -23,7 +23,8 @@ const AllMoviesBtn = () => {
     const visibleMovies = showAll ? filteredMovies : filteredMovies.slice(0, 8);
 
     return (
-        <div className='p-4'>
+        <div className='p-10'>
+            <h2 className='text-2xl mb-8 font-normal'>RECOMMENDED FOR YOU</h2>
 
             <div className='flex flex-wrap gap-3'>
                 {
@@ -34,9 +35,9 @@ const AllMoviesBtn = () => {
                                 setSelectedCategory(category);
                                 setShowAll(false); // নতুন ক্যাটাগরি ক্লিক করলে আবার ৮টায় নামবে
                             }}
-                            className={`px-4 py-2 rounded-lg transition-all duration-300 ${selectedCategory === category
-                                    ? "bg-blue-600 text-white"
-                                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                            className={`px-4 py-2 mb-3 rounded-full border border-[#fdc700] transition-all duration-300 ${selectedCategory === category
+                                ? "bg-[#fdc700] text-white"
+                                : "bg- text-white hover:bg-[#fdc700]"
                                 }`}
                         >
                             {category}
@@ -52,7 +53,7 @@ const AllMoviesBtn = () => {
                             <MovieCard key={movie.id} movie={movie} />
                         ))
                     ) : (
-                        <p className='text-center text-gray-500'>
+                        <p className='text-center '>
                             No movies found in this category.
                         </p>
                     )
@@ -62,7 +63,7 @@ const AllMoviesBtn = () => {
             <div className='flex justify-center mt-5'>
                 {
                   filteredMovies.length > 8 && (
-                    <button onClick={() => setShowAll(!showAll)} className='px-4 py-1.5 bg-yellow-400 font-medium rounded-lg hover:bg-amber-500 transition-all'>
+                    <button onClick={() => setShowAll(!showAll)} className='px-4 py-1.5 text-black font-semibold bg-yellow-400  rounded-lg  transition-all shadow-lg hover:shadow-yellow-300/50 border-none outline-none'>
                         {showAll ? "Show Less" : "Show All"}
                     </button>
                   )  

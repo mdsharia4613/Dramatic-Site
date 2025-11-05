@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 const Navber = () => {
-    const navLinkstyle = ({isActive}) => isActive ? 'font-semibold text-yellow-400 transition-all duration-500': 'hover:text-yellow-400 transition-all duration-500'
+    const navLinkstyle = ({isActive}) => isActive ? 'font-medium text-yellow-400 transition-all duration-500': 'hover:text-yellow-400 transition-all duration-500'
 
     const links = (
         <>
@@ -16,7 +16,7 @@ const Navber = () => {
     )
     return (
         <div>
-            <div className="navbar shadow-md bg-black/40 top-0  backdrop-blur-md text-white fixed left-0 right-0 z-100">
+            <div className="navbar shadow-md bg-black/40 top-0  backdrop-blur-md text-white fixed left-0 right-0 z-100 font-mont">
                 <div className='w-11/12 mx-auto flex justify-between items-center'>
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -25,7 +25,7 @@ const Navber = () => {
                             </div>
                             <ul
                                 tabIndex="-1"
-                                className="  dropdown-content bg-black/40 backdrop-blur-md rounded-box p-2 shadow text-2xl">
+                                className="  dropdown-content bg-black/40 backdrop-blur-md rounded-box p-2 shadow text-lg">
 
                                 {links}
                             </ul>
@@ -33,7 +33,7 @@ const Navber = () => {
                         <div className='flex items-center gap-10'>
                             <a className="text-2xl font-bold font-grif text-[#fdc700]">DRAMATIC</a>
                             <div className="navbar-center hidden lg:flex">
-                                <ul  className="  px-1 flex gap-10 text-xl">
+                                <ul  className="  px-1 flex gap-10 text-lg">
                                     {links}
                                 </ul>
                             </div>

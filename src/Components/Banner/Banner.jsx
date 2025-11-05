@@ -14,7 +14,7 @@ import './Banner.css'
 // প্রয়োজনীয় মডিউল: Pagination, Autoplay, Navigation
 import { Pagination, Autoplay } from 'swiper/modules';
 
-// --- আপনার ছবিগুলি ইম্পোর্ট করুন ---
+
 import image1 from '../../assets/banner.jpg';
 import image2 from '../../assets/banner2.jpg';
 import image3 from '../../assets/movie.jpg';
@@ -48,7 +48,7 @@ const Banner = () => {
 
                     // ৫. প্রয়োজনীয় মডিউল
                     modules={[Autoplay, Pagination, ]}
-                    className="mySwiper w-full h-[60vh] md:h-[70vh] lg:h-[100vh]"
+                    className="mySwiper w-full h-[60vh] md:h-[70vh] lg:h-[85vh]"
                 >
                     
                     {sliderImages.map((image, index) => (

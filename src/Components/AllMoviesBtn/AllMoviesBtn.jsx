@@ -26,7 +26,7 @@ const AllMoviesBtn = () => {
     const visibleMovies = showAll ? filteredMovies : filteredMovies.slice(0, 8);
 
     return (
-        <div className='p-10'>
+        <div className='py-10 px-20 container mx-auto '>
             <h2 className='text-2xl mb-8 font-normal'>RECOMMENDED FOR YOU</h2>
 
             <div className='flex flex-wrap gap-3'>
@@ -49,7 +49,7 @@ const AllMoviesBtn = () => {
                 }
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-content-center gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-5'>
                 {
                     visibleMovies.length > 0 ? (
                         visibleMovies.map((movie) => (

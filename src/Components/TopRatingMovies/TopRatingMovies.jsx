@@ -7,7 +7,7 @@ const TopRatingMovies = () => {
 
     return (
         <>
-        <div className=''>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-20 container mx-auto pleace-items-center gap-5'>
             {
                 topRating.map(movie => (
                     <MovieCard key={movie.id} movie={movie} />

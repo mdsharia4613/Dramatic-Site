@@ -5,6 +5,7 @@ import Test from '../../Test/Test';
 import Test2 from '../../Test2/Test2';
 import Products from '../../Products/Products';
 import AllMoviesBtn from '../../AllMoviesBtn/AllMoviesBtn';
+import TopRatingMovies from '../../TopRatingMovies/TopRatingMovies';
 
 const Home = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -99,6 +100,7 @@ const Home = () => {
         <div>
             <Banner />
             <AllMoviesBtn></AllMoviesBtn>
+            <TopRatingMovies></TopRatingMovies>
             {/* <Test    /> */}
             {/* <Cards handleAddToCart={handleAddToCart} /> */}
             {/* <Test2 productCount={productCount} handleIncrease={handleIncrease} handleRemove={handleRemove} handleDecrease={handleDecrease} cartItems={cartItems}></Test2> */}

@@ -58,7 +58,7 @@ const AllMoviesBtn = () => {
                 }
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-5'>
                 {
                     visibleMovies.length > 0 ? (
                         visibleMovies.map((movie) => (

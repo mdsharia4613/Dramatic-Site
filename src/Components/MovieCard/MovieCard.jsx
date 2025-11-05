@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
     const { card_picture, title,  platform, rating } = movie;
 
     return (
-        <div className="w-72 border  border-yellow-300 rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-4 cursor-pointer mt-8">
+        <div className="w-[300px] h-[420px] border  border-yellow-300 rounded-2xl shadow-[#fdc700] hover:shadow-lg hover:-translate-y-2 transition-all duration-300 p-4 cursor-pointer mt-8">
             {/* Movie Image */}
             <div className="flex justify-center mb-3">
                 <img
